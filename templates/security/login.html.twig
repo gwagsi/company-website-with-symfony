@@ -3,9 +3,17 @@
 {% block title %}Log in!{% endblock %}
 
 {% block body %}
+<div id="login" class="padding ptb-xs-40 page-signin">
+<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="main-body">
+							<div class="body-inner">
+								<div class="card bg-white">
+									<div class="card-content">
 <form method="post">
     {% if error %}
-        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        <div class="alert alert-danger"> {{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
 
     {% if app.user %}
@@ -14,7 +22,9 @@
         </div>
     {% endif %}
 
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <section class="logo text-center">
+											<h2>Login</h2>
+										</section>
     <label for="inputUsername">Username</label>
     <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus>
     <label for="inputPassword">Password</label>
@@ -38,5 +48,15 @@
     <button class="btn btn-lg btn-primary" type="submit">
         Sign in
     </button>
+
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
 </form>
 {% endblock %}

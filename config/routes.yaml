@@ -2,3 +2,25 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+app_logout:
+    path: /logout
+    methods: GET
+create:
+  path: /create-post
+  controller: App\Controller\AdminController::createPost
+
+view:
+  path: /view-post/{id}
+  controller: App\Controller\AdminController::viewPost
+
+show:
+  path: /show-post
+  controller: App\Controller\AdminController::showPost
+
+delete:
+  path: /delete-post/{id}
+  controller: App\Controller\AdminController::deletePost
+
+update:
+  path: /update-post/{id}
+  controller: App\Controller\AdminController::updatePost
