@@ -1,3 +1,5 @@
+{% extends 'admin-base.html.twig' %}
+{% block body %}
 <style>
     th, td {
         padding: 10px;
@@ -29,7 +31,7 @@
                 <td>{{ post.content | slice(0, 20) }}...</td>
                 <td>
                     {% if post.slug != "" %}
-                        <a href="/admin">Visit Homepage</a>
+                        <a href="">Visit Homepage</a>
                     {% else %}
                         Void Field
                     {% endif %}
@@ -46,3 +48,5 @@
 
 <br/>
 <a href="/create-post">Create New</a>
+
+{% endblock %}
