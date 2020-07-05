@@ -1,3 +1,5 @@
+{% extends 'admin-base.html.twig' %}
+{% block body %}
 <style>
     th, td {
         padding: 10px;
@@ -31,5 +33,6 @@
 </table>
 
 <br/>
-<a href="/show-post">View All</a> -
-<a href="/update-post/{{ post.id }}">Modify</a>
+<a href="admin/show-post">View All</a> -
+<a href="admin/update-post/{{ post.id }}">Modify</a>
+{% endblock %}

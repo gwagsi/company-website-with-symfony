@@ -30,7 +30,7 @@ class AdminController extends AbstractController
 
         if ($form->isSubmitted()) {
 
-            $article = $form->getData();
+            $post = $form->getData();
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
