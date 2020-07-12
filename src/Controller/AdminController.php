@@ -31,7 +31,10 @@ class AdminController extends AbstractController
         if ($form->isSubmitted()) {
 
             $post = $form->getData();
-
+            $uploadedFile = $form['imageFile']->getData();
+            $destination = $this->getParameter('kernel.project_dir').'/public/uploads';
+            dd($uploadedFile->move($destination));
+            $article->setImageFilename($newFilename);
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
             $em->flush();
