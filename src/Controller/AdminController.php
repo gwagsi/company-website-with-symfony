@@ -36,7 +36,7 @@ class AdminController extends AbstractController
             $em->persist($post);
             $em->flush();
 
-            return $this->redirect('/view-post/' . $post->getId());
+            return $this->redirect('/admin/view-post/' . $post->getId());
 
         }
 
@@ -112,7 +112,7 @@ class AdminController extends AbstractController
         if ($form->isSubmitted()) {
             $article = $form->getData();
             $em->flush();
-            return $this->redirect('/view-post/' . $id);
+            return $this->redirect('/admin/view-post/' . $id);
         }
 
         return $this->render(
