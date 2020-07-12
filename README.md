@@ -15,6 +15,6 @@ Installation process
 
 Wow
 
-Building completed now open your browser and login with username aimal and password password.
+Building completed now open your browser and login with username  and password .
 
 If you are not using apache or Nginx just start the server by runing php bin/console server:run command.
