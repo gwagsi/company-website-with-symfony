@@ -313,7 +313,42 @@
 			</div>
 		</section>
 		<!-- Section_End -->
-		<!-- Blog -->
+				<!-- Blog -->
+		<section class="latest__block padding ptb-xs-40">
+			<div class="container">
+				<div class="row text-center mb-40 mb-xs-30">
+					<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+						<div class="section-title_home">
+							<h2>Our Blog</h2>
+							<span class="b-line"></span>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 's standard dummy text.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				{% for post in post %}
+					<div class="col-lg-4">
+						<div class="img-scale">
+							<figure>
+								<img src="../uploads/blog-images/{{post.imageFilename}}" alt="assets/images/blog/home_blog_1.jpg">
+							</figure>
+							<div class="latest__block-post gray-bg">
+
+								<h3 class="latest__block-title"><a href="blog-single.html">{{post.title}}</a></h3>
+
+								<div class="flat-link flat-arrow sm  ">
+									<a href="/blog-detail/{{ post.id }}"" class="more_btn__block">More <i class="fa fa-angle-right"></i> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+		{% if post is empty %}
 		<section class="latest__block padding ptb-xs-40">
 			<div class="container">
 				<div class="row text-center mb-40 mb-xs-30">
@@ -383,4 +418,5 @@
 			</div>
 		</section>
 		<!-- Blog_End -->
+		{% endif %}
     {% endblock %}

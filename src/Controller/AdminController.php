@@ -5,6 +5,7 @@ use App\Entity\Post;
 use App\Form\BlogPostType;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Service\FileUploader;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,7 +22,7 @@ class AdminController extends AbstractController
         ]);
     }
  
-    public function createPost(Request $request)
+    public function createPost(Request $request, FileUploader $fileUploader)
     {
         $post = new Post();
         $form = $this->createForm(BlogPostType::class, $post);
@@ -31,11 +32,13 @@ class AdminController extends AbstractController
         if ($form->isSubmitted()) {
 
             $post = $form->getData();
-            $uploadedFile = $form['imageFile']->getData();
-            $destination = $this->getParameter('kernel.project_dir').'/public/uploads';
-            dd($uploadedFile->move($destination));
-            $article->setImageFilename($newFilename);
-            $em = $this->getDoctrine()->getManager();
+     /** @var UploadedFile $imageFile */
+     $imageFile = $form->get('image')->getData();
+     if ($imageFile) {
+         $imageFileName = $fileUploader->upload($imageFile);
+         $post->setImageFilename($imageFileName);
+         }
+        $em = $this->getDoctrine()->getManager();
             $em->persist($post);
             $em->flush();
 
@@ -94,7 +97,7 @@ class AdminController extends AbstractController
         $em->remove($post);
         $em->flush();
 
-        return $this->redirect('/show-post');
+        return $this->redirect('/admin/show-post');
     }
 
     public function updatePost(Request $request, $id)

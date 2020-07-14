@@ -20,9 +20,11 @@ class BlogPostType extends AbstractType
         $builder
             ->add('title', TextType::class)
             ->add('description', TextType::class)
-            ->add('imageFile', FileType::class, [
-                'mapped' => false
+            ->add('image', FileType::class, [
+                'mapped' => false,
+                'required' => false
             ])
+            ->add('category', TextType::class)
 
             ->add('content', CKEditorType::class, [
                 'config' => [
@@ -31,8 +33,7 @@ class BlogPostType extends AbstractType
                     'required' => true 
                 ]
             ])
-            ->add('slug', TextType::class,
-                    ['required' => false, 'attr' => ['placeholder' => 'www.example.com']])
+
             ->add('save', SubmitType::class,
                     ['label' => 'Save Article'])
         ;

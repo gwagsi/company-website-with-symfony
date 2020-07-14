@@ -12,8 +12,12 @@ class MainController extends AbstractController
      */
     public function index()
     {
-        return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
-        ]);
+        $post = $this->getDoctrine()
+        ->getRepository('App\Entity\Post')
+        ->findAll();
+        return $this->render(
+            'main/index.html.twig',
+            array('post' => $post)
+        );
     }
 }

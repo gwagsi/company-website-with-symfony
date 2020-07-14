@@ -31,15 +31,14 @@ class Post
      * @ORM\Column(type="string", length=2000)
      */
     private $content;
-
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $slug;
-    /**
+    private $imageFilename;
+        /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $image;
+    private $category;
 
     public function getId(): ?int
     {
@@ -82,25 +81,25 @@ class Post
         return $this;
     }
 
-    public function getSlug(): ?string
+    public function getImageFilename(): ?string
     {
-        return $this->slug;
+        return $this->imageFilename;
     }
 
-    public function setSlug(?string $slug): self
+    public function setImageFilename(?string $imageFilename): self
     {
-        $this->slug = $slug;
+        $this->imageFilename = $imageFilename;
 
         return $this;
     }
-    public function getImage(): ?string
+    public function getCategory(): ?string
     {
-        return $this->image;
+        return $this->category;
     }
 
-    public function setImage(?string $image): self
+    public function setCategory(?string $category): self
     {
-        $this->image = $image;
+        $this->category = $category;
 
         return $this;
     }

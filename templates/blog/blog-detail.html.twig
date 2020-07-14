@@ -16,33 +16,40 @@
                 <a class="btn-text xs-hidden"> <i class="ion-android-share-alt"></i></a> </div>
             </div>
             <div class="post-header">
-              <h2>{{ post.title }}</h2>
+              <h2>{{ post.title |raw }}</h2>
             </div>
-            <div class="post-media"> <img src="assets/images/blog/img2.jpg" alt=""><span class="event-calender blog-date"> 21 <span>june</span> </span> </div>
-            <div class="post-entry">
-            {{ post.content }}
+            <div class="post-media"> <img src="../uploads/blog-images/{{post.imageFilename}}" alt=""><span class="event-calender blog-date"> 21 <span>june</span> </span> </div>
+            <div >
+             <h2>{{ post.title |raw }}</h2>
+            {{post.content|raw }}
             </div>
           </div>
           <hr />
-     
           <div class="clearfix"></div>
+          					
+							{{ form_start(form) }}
+								<!-- IF MAIL SENT SUCCESSFULLY -->
+								<div id="success">
+									<div role="alert" class="alert alert-success">
+										<strong>Thanks</strong> for using reaching out. Your message has been sent.
+									</div>
+								</div>
+								<!-- END IF MAIL SENT SUCCESSFULLY -->
           <div class="mb-xs-30">
             <h4>Leave a comment</h4>
             
               <form>
               <div class="row mt-30">
                   <div class="col-md-4">
-                    <input type="text" class="input-lg form-full" value="" placeholder="Name" name="name" id="name" required />
+                       {{ form_row(form.name,{'attr':{'class':'input-lg form-full'}}) }}
+                    
                   </div>
                   <div class="col-md-4">
-                    <input type="text" class="input-lg form-full" value="" placeholder="Email" name="email" id="email2" required />
-                  </div>
-                  <div class="col-md-4">
-                    <input type="text" class="input-lg form-full" value="" placeholder="Website" name="website" id="website" required />
+                       {{ form_row(form.email,{'attr':{'class':'input-lg form-full'}}) }}
                   </div>
                   <div class="col-md-12">
-                    <textarea placeholder="Message" name="message" id="message" class="form-full" required></textarea>
-                  </div>
+                   {{ form_row(form.message,{'attr':{'class':'input-lg form-full'}}) }}
+                   </div>
                   <div class="col-md-12">
                     <button class="btn-text"> Post </button>
                   </div>
@@ -50,6 +57,7 @@
               </form>
             
           </div>
+         {{ form_end(form) }}
         </div>
     </div>
     </div>
