@@ -31,12 +31,15 @@ class AdminController extends AbstractController
         if ($form->isSubmitted()) {
 
             $post = $form->getData();
-
+            $uploadedFile = $form['imageFile']->getData();
+            $destination = $this->getParameter('kernel.project_dir').'/public/uploads';
+            dd($uploadedFile->move($destination));
+            $article->setImageFilename($newFilename);
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);
             $em->flush();
 
-            return $this->redirect('/view-post/' . $post->getId());
+            return $this->redirect('/admin/view-post/' . $post->getId());
 
         }
 
@@ -112,7 +115,7 @@ class AdminController extends AbstractController
         if ($form->isSubmitted()) {
             $article = $form->getData();
             $em->flush();
-            return $this->redirect('/view-post/' . $id);
+            return $this->redirect('/admin/view-post/' . $id);
         }
 
         return $this->render(
