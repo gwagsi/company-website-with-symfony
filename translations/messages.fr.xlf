@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="Nubvqtr" resname="There's no comment yet">
+        <source>There's no comment yet</source>
+        <target>il n'y a pas encore de commentaire</target>
+      </trans-unit>
+      <trans-unit id="kJoKNqj" resname="Change Language">
+        <source>Change Language</source>
+        <target>changer de langue</target>
+      </trans-unit>
+      <trans-unit id="3R.dc3j" resname="Our Blog">
+        <source>Our Blog</source>
+        <target>Notre blog</target>
+      </trans-unit>
+      <trans-unit id="cn_ikKE" resname="Get in Touch">
+        <source>Get in Touch</source>
+        <target>__Get in Touch</target>
+      </trans-unit>
+      <trans-unit id="OnBUBBQ" resname="Subscribe.advert">
+        <source>Subscribe to get exclusive offers on from the best cleaning company</source>
+        <target>Subscribe to get exclusive offers on from the best cleaning company</target>
+      </trans-unit>
+      <trans-unit id="E80_pPm" resname="Find Out More">
+        <source>Find Out More</source>
+        <target>__Find Out More</target>
+      </trans-unit>
+      <trans-unit id="XYxxq8U" resname="About Us">
+        <source>About Us</source>
+        <target>__About Us</target>
+      </trans-unit>
+      <trans-unit id="28RooUt" resname="FAQ">
+        <source>FAQ</source>
+        <target>__FAQ</target>
+      </trans-unit>
+      <trans-unit id="060fH4y" resname="Policies">
+        <source>Policies</source>
+        <target>__Policies</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>__Contact</target>
+      </trans-unit>
+      <trans-unit id="t5yskm4" resname="Help">
+        <source>Help</source>
+        <target>__Help</target>
+      </trans-unit>
+      <trans-unit id="xvO.1FY" resname="Term">
+        <source>Term</source>
+        <target>__Term</target>
+      </trans-unit>
+      <trans-unit id="Vip3p64" resname="conditions">
+        <source>conditions</source>
+        <target>__conditions</target>
+      </trans-unit>
+      <trans-unit id="VKV8MUf" resname="Privacy">
+        <source>Privacy</source>
+        <target>__Privacy</target>
+      </trans-unit>
+      <trans-unit id="VybZyHk" resname="Connect With Us On">
+        <source>Connect With Us On</source>
+        <target>__Connect With Us On</target>
+      </trans-unit>
+      <trans-unit id="XcN0dkQ" resname="All Rights Reserved">
+        <source>All Rights Reserved</source>
+        <target>__All Rights Reserved</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

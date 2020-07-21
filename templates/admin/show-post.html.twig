@@ -30,13 +30,13 @@
                 <td>{{ post.content | slice(0, 20) }}...</td>
                 <td>
                     {% if post.id != "" %}
-                        <a href="/blog-detail/{{ post.id }}">Visit Page</a>
+                        <a href="{_locale}/blog-detail/{{ post.id }}">Visit Page</a>
                     {% else %}
                         Void Field
                     {% endif %}
                 </td>
-                <td><a href="delete-post/{{ post.id }}">Delete</a></td>
-                <td><a href="update-post/{{ post.id }}">Update</a></td>
+                <td><a href="/delete-post/{{ post.id }}">Delete</a></td>
+                <td><a href="/update-post/{{ post.id }}">Update</a></td>
             </tr>
         {% endfor %}
         </tbody>
@@ -46,6 +46,6 @@
 {% endif %}
 
 <br/>
-<a href="/admin/create-post">Create New</a>
+<a href="/admin/{_locale}/create-post">Create New</a>
 
 {% endblock %}

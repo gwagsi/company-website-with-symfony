@@ -1,4 +1,7 @@
 {
+    "brick/math": {
+        "version": "0.8.15"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -109,6 +112,15 @@
     "egulias/email-validator": {
         "version": "2.1.18"
     },
+    "knplabs/doctrine-behaviors": {
+        "version": "v2.0.6"
+    },
+    "knplabs/knp-components": {
+        "version": "v2.4.1"
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "v5.2.0"
+    },
     "laminas/laminas-code": {
         "version": "3.4.1"
     },
@@ -120,6 +132,12 @@
     },
     "monolog/monolog": {
         "version": "2.1.0"
+    },
+    "nette/finder": {
+        "version": "v2.5.2"
+    },
+    "nette/utils": {
+        "version": "v3.1.2"
     },
     "nikic/php-parser": {
         "version": "v4.5.0"
@@ -156,6 +174,12 @@
     },
     "psr/log": {
         "version": "1.1.3"
+    },
+    "ramsey/collection": {
+        "version": "1.0.1"
+    },
+    "ramsey/uuid": {
+        "version": "4.0.1"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -569,6 +593,9 @@
     },
     "symfony/yaml": {
         "version": "v5.1.2"
+    },
+    "symplify/package-builder": {
+        "version": "v8.1.13"
     },
     "twig/extra-bundle": {
         "version": "v3.0.3"

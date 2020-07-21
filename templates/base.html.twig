@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
            <title>{% block title %}{% endblock %}</title>
-<<<<<<< HEAD
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 		<link href="{{ asset('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700') }}" rel="stylesheet"/>
 		<link href="{{ asset('assets/css/bootstrap.min.css') }}"  rel="stylesheet" type="text/css"/>
@@ -17,19 +16,6 @@
 		<link href="{{ asset('assets/css/layers.css') }}" type="text/css" rel="stylesheet" media="screen"/>
 		<link href="{{ asset('assets/css/layers.css') }}" type="text/css" rel="stylesheet" media="screen"/>
 		<link href="{{ asset('assets/css/owl.carousel.css') }}" type="text/css" rel="stylesheet" media="screen"/>
-=======
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link href="{{ asset('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700') }}" rel="stylesheet">
-		<link href="{{ asset('assets/css/bootstrap.min.css') }}"  rel="stylesheet type="text/css">
-		<link href="{{ asset('assets/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
-		<link href="{{ asset('assets/css/ionicons.css') }}" rel="stylesheet" type="text/css">
-		<link href="{{ asset('assets/css/jquery.fancybox.css') }}" rel="stylesheet" type="text/css">
-		<!--Main Slider-->
-		<link href="{{ asset('assets/css/settings.css')}}) " type="text/css" rel="stylesheet" media="screen">
-		<link href="{{ asset('assets/css/layers.css') }}" type="text/css" rel="stylesheet" media="screen">
-		<link href="{{ asset('assets/css/layers.css') }}" type="text/css" rel="stylesheet" media="screen">
-		<link href="{{ asset('assets/css/owl.carousel.css') }}" type="text/css" rel="stylesheet" media="screen">
->>>>>>> 7989b0538c2e96e3398caf7b0467289d36b48638
 		<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 		<link href="{{ asset('assets/css/header.css') }}" rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/css/footer1.css') }}" rel="stylesheet" type="text/css" />
@@ -62,8 +48,7 @@
 		<div class="middel-part__block">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 logo col-md-12 d-flex align-items-center">
-						
+					<div class="col-lg-4 logo col-md-12 d-flex align-items-center">			
 							<a href="">
 								CONTRACTOR(LOGO Section)
 								</a>		
@@ -88,14 +73,14 @@
 								<li>
 									<i class="fa fa-phone"></i>
 									<p>
-										Call Us
+										{% trans %}Call Us{% endtrans %}
 										<span> 0666264040</span>
 									</p>
 								</li>
 								<li>
 									<i class="fa fa-envelope" aria-hidden="true"></i>
 									<p>
-										Mail Us
+										{% trans %}Mail Us{% endtrans %}
 										<span>
 											<a href="mailto:info@gmail.com">info@contractor.com</a>
 										</span>
@@ -118,13 +103,13 @@
 					<div class="collapse navbar-collapse" id="navbar-menu">
 						<ul class="nav navbar-nav mobile-menu d-flex justify-content-between">
 							<li>
-								<a href="{{path('home')}}">Home</a>
+								<a href="{{path('home')}}">{% trans %}Home{% endtrans %}</a>
 							</li>
 							<li>
-								<a href="{{path('about')}}">About us</a>
+								<a href="{{path('about')}}">{% trans %}About us{% endtrans %}</a>
 							</li>
 							<li>
-								<a href="{{path('services')}}">Services</a>
+								<a href="{{path('services')}}">{% trans %}Services{% endtrans %}</a>
 								
 							</li>
 		
@@ -133,8 +118,11 @@
 								
 							</li>
 							<li>
-								<a href="{{path('contact')}}">Contact us</a>
+								<a href="{{path('contact')}}">{% trans %}Contact us{% endtrans %}</a>
 							</li>
+							<li>
+  						      {% include '_locale_switcher.html.twig' %}
+  							</li>
 						</ul>
 					</div>
 					<!--navbar-collapse -->
@@ -155,8 +143,8 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                <p>Subscribe to get exclusive offers on from the best cleaning company</p>
+                                <h3 class="f-title f_600 t_color f_size_18">{% trans %}Get in Touch{% endtrans %}</h3>
+                                <p>{% trans %}Subscribe to get exclusive offers on from the best cleaning company{% endtrans %}</p>
                                 <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                     <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                                     <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
@@ -167,28 +155,28 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Find Out More</h3>
+                                <h3 class="f-title f_600 t_color f_size_18">{% trans %}Find Out More{% endtrans %}</h3>
                                 <ul class="list-unstyled f_list">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Policies</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">{% trans %}About Us{% endtrans %}</a></li>
+                                    <li><a href="#">{% trans %}FAQ{% endtrans %}</a></li>
+                                    <li><a href="#">{% trans %}Policies{% endtrans %}</a></li>
+                                    <li><a href="#">{% trans %}Contact{% endtrans %}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <h3 class="f-title f_600 t_color f_size_18">{% trans %}Help{% endtrans %}</h3>
                                 <ul class="list-unstyled f_list">
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Term &amp; conditions</a></li>
-                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">{% trans %}FAQ{% endtrans %}</a></li>
+                                    <li><a href="#">{% trans %}Term{% endtrans %} &amp; {% trans %}conditions{% endtrans %}</a></li>
+                                    <li><a href="#">{% trans %}Privacy{% endtrans %}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Connect With Us On</h3>
+                                <h3 class="f-title f_600 t_color f_size_18">{% trans %}Connect With Us On{% endtrans %}</h3>
                                 <div class="f_social_icon">
 								<a href="" class="facebook">
 								<i class="fa fa-facebook"></i>
@@ -220,7 +208,7 @@
     <span id="copyright">
         <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
     </span>
-    CONTRACTOR ----- All Rights Reserved
+    CONTRACTOR ----- {% trans %}All Rights Reserved {% endtrans %}
 </div>
                     </div>
                 </div>

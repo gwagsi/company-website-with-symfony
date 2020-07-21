@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Contact{% endtrans %}{% endblock %}
 
 {% block body %}
 <section class="padding ptb-xs-40">
@@ -11,7 +11,7 @@
 						<div class="col-lg-8">
 
 							<div class="headeing pb-30">
-								<h2>Get in Touch</h2>
+								<h2>{% trans %}Get in Touch{% endtrans %}</h2>
 								<span class="b-line l-left line-h"></span>
 							</div>
 						
@@ -19,7 +19,7 @@
 								<!-- IF MAIL SENT SUCCESSFULLY -->
 								<div id="success">
 									<div role="alert" class="alert alert-success">
-										<strong>Thanks</strong> for using reaching out. Your message has been sent.
+										<strong>{% trans %}Thanks{% endtrans %}</strong> {% trans %}for using reaching out. Your message has been sent.{% endtrans %}
 									</div>
 								</div>
 								<!-- END IF MAIL SENT SUCCESSFULLY -->
@@ -50,7 +50,7 @@
 
 						<div class="col-lg-4 contact mt-sm-30 mt-xs-30">
 							<div class="headeing pb-20">
-								<h2>Contact Info</h2>
+								<h2>{% trans %}Contact Info{% endtrans %}</h2>
 								<span class="b-line l-left line-h"></span>
 							</div>
 							<div class="contact-info">
