@@ -15,20 +15,20 @@
     <tbody>
     <tr>
         <th>Title:</th>
-        <td>{{ post.title }}</td>
+        <td>{{ post.translate.title }}</td>
     </tr>
     <tr>
         <th>Description:</th>
-        <td>{{ post.description }}</td>
+        <td>{{ post.translate.description }}</td>
     </tr>
     <tr>
         <th>Article Body:</th>
-        <td>{{ post.content }}</td>
+        <td>{{ post.translate.content }}</td>
     </tr>
     </tbody>
 </table>
 
 <br/>
-<a href="/admin/{_locale}/show-post">View All</a> -
-<a href="/admin/{_locale}/update-post/{{ post.id }}">Modify</a>
+<a href="/admin/show-post">View All</a> -
+<a href="/admin/update-post/{{ post.id }}">Modify</a>
 {% endblock %}

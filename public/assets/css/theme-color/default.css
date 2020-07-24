@@ -9,7 +9,7 @@ nav.navbar.bootsnav, .main_nav ul ul li, .footer_logo ul li a:hover, .points_ico
 }
 
 .middel-part__block::before, .middel-part__block .logo:after, .middel-part__block .logo, .main_nav ul ul li:hover {
-  background: #e0dee6;
+  background: #5e2ced;
 }
 
 @media (max-width: 992px) {

@@ -15,18 +15,18 @@
                        {% for post in post %}
               <div class="blog-post mb-30">
                 <div class="post-media"> <img src="../uploads/blog-images/{{post.imageFilename}}" alt=""><span class="event-calender blog-date"> 21 <span>june</span> </span> </div>
-                <div class="post-meta"> <span>by <a href="javascript:avoid(0);">Admin</a>,</span>
+                <div class="post-meta"> <span>{% trans %}by {% endtrans %}<a href="javascript:avoid(0);">Admin</a>,</span>
                   <div class="post-more-link pull-right">
                     <div class="icons-hover-black"> <a href="#" class="facebook-icon"> <i class="fa fa-facebook"></i> </a><a href="#" class="twitter-icon"> <i class="fa fa-twitter"></i> </a><a href="#" class="googleplus-icon"> <i class="fa fa-google-plus"></i> </a><a href="#" class="linkedin-icon"> <i class="fa fa-linkedin"></i> </a> </div>
                     <a class="btn-text xs-hidden"> <i class="ion-android-share-alt"></i></a> </div>
                 </div>
                 <div class="post-header">
-                  <h2><a href="/blog-detail/{{ post.id }}">{{ post.title }}</a></h2>
+                  <h2><a href="/blog-detail/{{ post.id }}">{{ post.translate.title }}</a></h2>
                 </div>
                 <div class="post-entry">
-                  <p> {{ post.description }}</p>
+                  <p> {{ post.translate.description }}</p>
                 </div>
-                <div class="post-more-link pull-left"> <a href="/blog-detail/{{ post.id }}" class="btn-text">Read More</a> </div>
+                <div class="post-more-link pull-left"> <a href="/{{locale}}/blog-detail/{{ post.id }}" class="btn-text">{% trans %}Read More{% endtrans %}</a> </div>
               </div>
 
                  {% endfor %}

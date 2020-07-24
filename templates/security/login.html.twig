@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Log in!{% endtrans %}{% endblock %}
+{% block title %}{% trans %}Log in!{% endtrans %}{% endblock %}
 
 {% block body %}
 <div id="login" class="padding ptb-xs-40 page-signin">
@@ -46,7 +46,7 @@
     #}
 
     <button class="btn btn-lg btn-primary" type="submit">
-        Sign in{% endtrans %}
+        {% trans %}Sign in{% endtrans %}
     </button>
 
 									</div>

@@ -7,7 +7,7 @@
     {% if locale != app.request.locale %}
     <a class="" href="{{ path(route, params|merge({ _locale: locale })) }}">
        <i class="fa fa-language" aria-hidden="true"></i>
- {{ "Change Language" | trans }}
+ {{ "French" | trans }}
     </a>
     {% endif %}
 {% endfor %}

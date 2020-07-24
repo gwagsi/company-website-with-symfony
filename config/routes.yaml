@@ -30,5 +30,12 @@ show-email:
   controller: App\Controller\ContactController::showEmail
 
 blog-detail:
-  path: /blog-detail/{id}
+  path: /{_locale}/blog-detail/{id}
   controller: App\Controller\BlogController::blogDetail
+# redirecting the homepage
+homepage:
+    path: /
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    defaults:
+        path: /{locale}
+        permanent: true

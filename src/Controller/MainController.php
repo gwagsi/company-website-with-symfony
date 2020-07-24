@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Post;
+use App\Entity\PostTranslation;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Knp\Component\Pager\PaginatorInterface;
@@ -22,9 +23,9 @@ class MainController extends AbstractController
         $posts = $this->getDoctrine()->getRepository(Post::class)->findBy([],['id' => 'desc']);
 
         $post = $paginator->paginate(
-            $posts, // Requête contenant les données à paginer (ici nos articles)
-            $request->query->getInt('page', 1), // Numéro de la page en cours, passé dans l'URL, 1 si aucune page
-            3 // Nombre de résultats par page
+            $posts,
+            $request->query->getInt('page', 1),
+            3 
         );
         
         return $this->render('main/index.html.twig', [

@@ -5,6 +5,7 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "a2lix/translation-form-bundle": "^3.0",
         "easycorp/easyadmin-bundle": "^3.0",
         "friendsofsymfony/ckeditor-bundle": "^2.2",
         "kms/froala-editor-bundle": "^3.1",

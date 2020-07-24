@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Post;
+use App\Entity\PostTranslation;
 use App\Entity\Comment;
 use App\Form\CommentType;
 use Symfony\Component\HttpFoundation\Response;
@@ -32,31 +33,19 @@ class BlogController extends AbstractController
     }
     public function blogDetail(Request $request,$id)
     {
-        $comment = new Comment();
-        $form = $this->createForm(CommentType::class, $comment);
-        $form->handleRequest($request);
-        if ($form->isSubmitted()) {
-            $comment = $form->getData();
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($comment);
-            $em->flush();
-
-            return $this->redirect('/blog-detail/' . $comment->getId());
-
-        }
         $post = $this->getDoctrine()
-            ->getRepository('App\Entity\Post')
-            ->find($id);
-
+        ->getRepository('App\Entity\Post')
+        ->find($id);
         if (!$post) {
             throw $this->createNotFoundException(
                 'There are no articles with the following id: ' . $id
             );
         }
-        
+        $em = $this->getDoctrine()->getManager();
+        $showComment = $em->getRepository('App\Entity\Comment')->find($id);
         return $this->render(
             'blog/blog-detail.html.twig',
-            array('post' => $post,'form' => $form->createView())
+            array('post' => $post,'showComment' => $showComment,)
         );
     }
 

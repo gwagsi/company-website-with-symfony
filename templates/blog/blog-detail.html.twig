@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 
-{% block title %}{{ post.title }}{% endblock %}
+{% block title %}{{ post.translate.title }}{% endblock %}
 
 {% block body %}
 <!-- Blog Post Section -->
@@ -10,54 +10,24 @@
         <!-- Post Bar -->
         <div class="col-lg-9 blog-post-hr post-section">
           <div class="blog-post mb-30">
-            <div class="post-meta"> <span>by <a href="javascript:avoid(0);">Admin</a>,</span><span> <a href="javascript:avoid(0);"><i class="fa fa-comment-o"></i> 25</a>,</span><span> <a href="javascript:avoid(0);"><i class="fa fa-heart-o"></i> 57</a>,</span>
+            <div class="post-meta"> <span>{% trans %}by{% endtrans %} <a href="javascript:avoid(0);">Admin</a>,</span><span> <a href="javascript:avoid(0);"><i class="fa fa-comment-o"></i> 25</a>,</span><span> <a href="javascript:avoid(0);"><i class="fa fa-heart-o"></i> 57</a>,</span>
               <div class="post-more-link pull-right">
                 <div class="icons-hover-black"> <a href="#" class="facebook-icon"> <i class="fa fa-facebook"></i> </a><a href="#" class="twitter-icon"> <i class="fa fa-twitter"></i> </a><a href="#" class="googleplus-icon"> <i class="fa fa-google-plus"></i> </a><a href="#" class="linkedin-icon"> <i class="fa fa-linkedin"></i> </a> </div>
                 <a class="btn-text xs-hidden"> <i class="ion-android-share-alt"></i></a> </div>
             </div>
             <div class="post-header">
-              <h2>{{ post.title |raw }}</h2>
+              <h2>{{ post.translate.title |raw }}</h2>
             </div>
-            <div class="post-media"> <img src="../uploads/blog-images/{{post.imageFilename}}" alt=""><span class="event-calender blog-date"> 21 <span>june</span> </span> </div>
+            <div class="post-media"> 		<img src="../../../uploads/blog-images/{{post.imageFilename}}" alt="assets/images/blog/home_blog_1.jpg"><span class="event-calender blog-date"> 21 <span>june</span> </span> </div>
             <div >
-             <h2>{{ post.title |raw }}</h2>
-            {{post.content|raw }}
+             <h2>{{ post.translate.title |raw }}</h2>
+            {{post.translate.content|raw }}
             </div>
           </div>
           <hr />
           <div class="clearfix"></div>
           					
-							{{ form_start(form) }}
-								<!-- IF MAIL SENT SUCCESSFULLY -->
-								<div id="success">
-									<div role="alert" class="alert alert-success">
-										<strong>Thanks</strong> for using reaching out. Your message has been sent.
-									</div>
-								</div>
-								<!-- END IF MAIL SENT SUCCESSFULLY -->
-          <div class="mb-xs-30">
-            <h4>Leave a comment</h4>
-            
-              <form>
-              <div class="row mt-30">
-                  <div class="col-md-4">
-                       {{ form_row(form.name,{'attr':{'class':'input-lg form-full'}}) }}
-                    
-                  </div>
-                  <div class="col-md-4">
-                       {{ form_row(form.email,{'attr':{'class':'input-lg form-full'}}) }}
-                  </div>
-                  <div class="col-md-12">
-                   {{ form_row(form.message,{'attr':{'class':'input-lg form-full'}}) }}
-                   </div>
-                  <div class="col-md-12">
-                    <button class="btn-text"> Post </button>
-                  </div>
-               </div>
-              </form>
-            
-          </div>
-         {{ form_end(form) }}
+
         </div>
     </div>
     </div>

@@ -9,65 +9,266 @@
         <source>There's no comment yet</source>
         <target>il n'y a pas encore de commentaire</target>
       </trans-unit>
-      <trans-unit id="kJoKNqj" resname="Change Language">
-        <source>Change Language</source>
-        <target>changer de langue</target>
-      </trans-unit>
       <trans-unit id="3R.dc3j" resname="Our Blog">
         <source>Our Blog</source>
         <target>Notre blog</target>
       </trans-unit>
       <trans-unit id="cn_ikKE" resname="Get in Touch">
         <source>Get in Touch</source>
-        <target>__Get in Touch</target>
+        <target>Entrer en contact
+        </target>
       </trans-unit>
       <trans-unit id="OnBUBBQ" resname="Subscribe.advert">
-        <source>Subscribe to get exclusive offers on from the best cleaning company</source>
-        <target>Subscribe to get exclusive offers on from the best cleaning company</target>
+        <source>Subscribe.advert</source>
+        <target>Abonnez-vous pour obtenir des offres exclusives de la meilleure entreprise de nettoyage</target>
       </trans-unit>
       <trans-unit id="E80_pPm" resname="Find Out More">
         <source>Find Out More</source>
-        <target>__Find Out More</target>
+        <target>En savoir plus</target>
       </trans-unit>
       <trans-unit id="XYxxq8U" resname="About Us">
         <source>About Us</source>
-        <target>__About Us</target>
+        <target>À propos de nous</target>
       </trans-unit>
       <trans-unit id="28RooUt" resname="FAQ">
         <source>FAQ</source>
-        <target>__FAQ</target>
+        <target>FAQ</target>
       </trans-unit>
       <trans-unit id="060fH4y" resname="Policies">
         <source>Policies</source>
-        <target>__Policies</target>
+        <target>Stratégies</target>
       </trans-unit>
       <trans-unit id="K1w9JnI" resname="Contact">
         <source>Contact</source>
-        <target>__Contact</target>
+        <target>Contact</target>
       </trans-unit>
       <trans-unit id="t5yskm4" resname="Help">
         <source>Help</source>
-        <target>__Help</target>
+        <target>Aidez-moi</target>
       </trans-unit>
       <trans-unit id="xvO.1FY" resname="Term">
         <source>Term</source>
-        <target>__Term</target>
+        <target>Terme</target>
       </trans-unit>
       <trans-unit id="Vip3p64" resname="conditions">
         <source>conditions</source>
-        <target>__conditions</target>
+        <target>conditions</target>
       </trans-unit>
       <trans-unit id="VKV8MUf" resname="Privacy">
         <source>Privacy</source>
-        <target>__Privacy</target>
+        <target>Intimité</target>
       </trans-unit>
       <trans-unit id="VybZyHk" resname="Connect With Us On">
         <source>Connect With Us On</source>
-        <target>__Connect With Us On</target>
+        <target>Connectez-vous avec nous sur</target>
       </trans-unit>
       <trans-unit id="XcN0dkQ" resname="All Rights Reserved">
         <source>All Rights Reserved</source>
-        <target>__All Rights Reserved</target>
+        <target>Tous les droits sont réservés</target>
+      </trans-unit>
+      <trans-unit id="CulgrGi" resname="bout-Us">
+        <source>bout-Us</source>
+        <target>À propos de nous</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="Tvyg0Qx" resname="About">
+        <source>About</source>
+        <target>À propos</target>
+      </trans-unit>
+      <trans-unit id="5d3r52V" resname="A Few Words About us">
+        <source>A Few Words About us</source>
+        <target>Quelques mots sur nous</target>
+      </trans-unit>
+      <trans-unit id="j2VdV.3" resname="Why Choose Us">
+        <source>Why Choose Us</source>
+        <target>Pourquoi nous choisir</target>
+      </trans-unit>
+      <trans-unit id="FQceBvg" resname="Our Mission">
+        <source>Our Mission</source>
+        <target>Notre mission</target>
+      </trans-unit>
+      <trans-unit id="l.H2g1Z" resname="What We Do">
+        <source>What We Do</source>
+        <target>Ce que nous faisons</target>
+      </trans-unit>
+      <trans-unit id="uS1c5Tj" resname="The Company you can trust">
+        <source>The Company you can trust</source>
+        <target>L'entreprise en qui vous pouvez avoir confiance</target>
+      </trans-unit>
+      <trans-unit id="_deaUcA" resname="Our Histroy">
+        <source>Our Histroy</source>
+        <target>Notre histoire</target>
+      </trans-unit>
+      <trans-unit id="ZdSCNak" resname="Startup">
+        <source>Startup</source>
+        <target>Commencez</target>
+      </trans-unit>
+      <trans-unit id="wwDJRU9" resname="Our Team">
+        <source>Our Team</source>
+        <target>Notre équipe</target>
+      </trans-unit>
+      <trans-unit id="p_LSbo0" resname="by">
+        <source>by</source>
+        <target>par</target>
+      </trans-unit>
+      <trans-unit id="u0e4.19" resname="Thanks">
+        <source>Thanks</source>
+        <target>Merci</target>
+      </trans-unit>
+      <trans-unit id="kPC8VAN" resname="for using reaching out. Your message has been sent.">
+        <source>for using reaching out. Your message has been sent.</source>
+        <target>pour utiliser tendre la main. Votre message a été envoyé.</target>
+      </trans-unit>
+      <trans-unit id="h16XilN" resname="Leave a comment">
+        <source>Leave a comment</source>
+        <target>laissez un commentaire</target>
+      </trans-unit>
+      <trans-unit id="wpYC9Hd" resname="Read More">
+        <source>Read More</source>
+        <target>Lire la suite</target>
+      </trans-unit>
+      <trans-unit id="sgJl8io" resname="Call Us">
+        <source>Call Us</source>
+        <target>Appelez-nous</target>
+      </trans-unit>
+      <trans-unit id="_dS3ume" resname="Mail Us">
+        <source>Mail Us</source>
+        <target>Envoyez-nous un mail</target>
+      </trans-unit>
+      <trans-unit id="tLWAqa2" resname="About us">
+        <source>About us</source>
+        <target>À propos de nous</target>
+      </trans-unit>
+      <trans-unit id="YE3ORF4" resname="Services">
+        <source>Services</source>
+        <target>Prestations de service</target>
+      </trans-unit>
+      <trans-unit id="R6rzG4P" resname="Contact us">
+        <source>Contact us</source>
+        <target>Nous contacter</target>
+      </trans-unit>
+      <trans-unit id="LXa2YWd" resname="Subscribe to get exclusive offers on from the best cleaning company">
+        <source>Subscribe to get exclusive offers on from the best cleaning company</source>
+        <target>Abonnez-vous pour obtenir des offres exclusives de la meilleure entreprise de nettoyage</target>
+      </trans-unit>
+      <trans-unit id="NJyLxxn" resname="we are here to help you">
+        <source>we are here to help you</source>
+        <target>Nous sommes là pour vous aider</target>
+      </trans-unit>
+      <trans-unit id="65doZUX" resname="The best cleaning company in the country">
+        <source>The best cleaning company in the country</source>
+        <target>La meilleure entreprise de nettoyage du pays</target>
+      </trans-unit>
+      <trans-unit id="qaAXYsC" resname="Professional Cleaning Services Provider">
+        <source>Professional Cleaning Services Provider</source>
+        <target>Fournisseur de services de nettoyage professionnel</target>
+      </trans-unit>
+      <trans-unit id="trPvSaX" resname="We Are Cleaning Manager Always at Your Service.">
+        <source>We Are Cleaning Manager Always at Your Service.</source>
+        <target>Nous sommes un gestionnaire de nettoyage toujours à votre service.</target>
+      </trans-unit>
+      <trans-unit id="izF7DFD" resname="Expert">
+        <source>Expert</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="2j1FCGw" resname="Secure Services">
+        <source>Secure Services</source>
+        <target>Services sécurisés</target>
+      </trans-unit>
+      <trans-unit id="o0Z65e5" resname="Low Costing">
+        <source>Low Costing</source>
+        <target>Faible coût</target>
+      </trans-unit>
+      <trans-unit id="ZM0CIk8" resname="On Time">
+        <source>On Time</source>
+        <target>À temps</target>
+      </trans-unit>
+      <trans-unit id="tnPsX90" resname="Quality Services">
+        <source>Quality Services</source>
+        <target>Des services de qualité</target>
+      </trans-unit>
+      <trans-unit id="qRJZRcj" resname="House Cleaning">
+        <source>House Cleaning</source>
+        <target>Nettoyage de la maison</target>
+      </trans-unit>
+      <trans-unit id="qjA3yjZ" resname="Apartment Cleaning">
+        <source>Apartment Cleaning</source>
+        <target>Nettoyage d'appartement</target>
+      </trans-unit>
+      <trans-unit id="s5EmUyv" resname="Carpet Cleaning">
+        <source>Carpet Cleaning</source>
+        <target>Nettoyage de tapis</target>
+      </trans-unit>
+      <trans-unit id="maexc2_" resname="Commercial Cleaning">
+        <source>Commercial Cleaning</source>
+        <target>Nettoyage commercial</target>
+      </trans-unit>
+      <trans-unit id="vCTK0iU" resname="Residential Cleaning">
+        <source>Residential Cleaning</source>
+        <target>Nettoyage résidentiel</target>
+      </trans-unit>
+      <trans-unit id="7f8je5z" resname="After Renovation">
+        <source>After Renovation</source>
+        <target>Après la rénovation</target>
+      </trans-unit>
+      <trans-unit id="ucMV5pj" resname="Have Any Question">
+        <source>Have Any Question</source>
+        <target>Avoir n'importe quelle question</target>
+      </trans-unit>
+      <trans-unit id="zA442px" resname="Subscribe">
+        <source>Subscribe</source>
+        <target>Souscrire</target>
+      </trans-unit>
+      <trans-unit id="1ncZDgq" resname="Service">
+        <source>Service</source>
+        <target>Un service</target>
+      </trans-unit>
+      <trans-unit id="HSBSagd" resname="Our">
+        <source>Our</source>
+        <target>Notre</target>
+      </trans-unit>
+      <trans-unit id=".PG0lNs" resname="Contact Info">
+        <source>Contact Info</source>
+        <target>Infos `a contacter</target>
+      </trans-unit>
+      <trans-unit id="dFgZn_l" resname="French">
+        <source>French</source>
+        <target>English</target>
+      </trans-unit>
+      <trans-unit id="yKeA0.P" resname="Log in!">
+        <source>Log in!</source>
+        <target>s'identifier!</target>
+      </trans-unit>
+      <trans-unit id="acVpEs4" resname="You are logged in as">
+        <source>You are logged in as</source>
+        <target>Vous êtes connecté en tant que</target>
+      </trans-unit>
+      <trans-unit id="0FJ_Sz1" resname="Logout">
+        <source>Logout</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="nWMiwfT" resname="Login">
+        <source>Login</source>
+        <target>s'identifier!</target>
+      </trans-unit>
+      <trans-unit id="47ienTP" resname="Username">
+        <source>Username</source>
+        <target>Nom d'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="588_9PF" resname="Password">
+        <source>Password</source>
+        <target>mot de passe</target>
+      </trans-unit>
+      <trans-unit id="v9QCsvb" resname="Sign in">
+        <source>Sign in</source>
+        <target>se connecter</target>
+      </trans-unit>
+      <trans-unit id="KDEhkIa" resname="About-Us">
+        <source>About-Us</source>
+        <target>À propos de nous</target>
       </trans-unit>
     </body>
   </file>
